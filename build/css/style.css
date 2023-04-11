@@ -666,7 +666,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -680,8 +680,8 @@ button,
 }
 
 .button.focus-visible:focus {
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   padding: 24px 20px;
   border: none;
 }
@@ -1324,7 +1324,7 @@ button,
   width: 100%;
   min-height: 658px;
   padding: 30px 0 10px 0;
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   color: #ffffff;
 }
 
@@ -1505,6 +1505,7 @@ button,
   width: 100%;
   max-width: 500px;
   aspect-ratio: 500/556;
+  background-color: #000145;
   -webkit-transform: translateY(-23px);
   -ms-transform: translateY(-23px);
   transform: translateY(-23px);
@@ -1567,7 +1568,7 @@ button,
     padding-top: 34px;
     padding-bottom: 30px;
     min-height: 554px;
-    background: conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .header__header {
@@ -1666,7 +1667,7 @@ button,
   .header {
     padding-top: 16px;
     min-height: 491px;
-    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .header__link {
@@ -1790,8 +1791,8 @@ button,
 
 @media (hover: hover) {
   .button:hover:not(.focus-visible) {
-    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     padding: 24px 20px;
     border: none;
   }
