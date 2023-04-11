@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Лучший фитнес-центр города Омска">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicons/favicon.ico">
@@ -18,52 +18,49 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="header">
+        <div class="container">
+          <header class="header__header">
+            <a class="header__logo-link" href="./index.html">
+              <img class="header__logo" src="./img/svg/logo.svg" alt="Логотип SUPERGYM." width="122" height="44">
+            </a>
+            <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+          </header>
+
+          <section class="header__hero hero">
+            <div class="hero__description">
+              <p>омск</p>
+              <h1>Фитнес центр</h1>
+              <ul>
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a class="button hero__button" href="#">Купить абонемент</a>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/hero-desktop.webp 1x, ./img/hero-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x">
+                <img src="./img/hero-desktop.jpg" alt="Атлет в майке со значком супермена под эпичным контрастным освещением." width="500" height="556"
+                srcset="./img/hero-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <main>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container">Я подвал</div>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>
