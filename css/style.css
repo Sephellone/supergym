@@ -2039,6 +2039,7 @@ button,
 
   .gym__video {
     width: 100%;
+    max-width: none;
     margin-top: 7px;
     aspect-ratio: 320/167;
     -webkit-transform: translate(0, 0);
