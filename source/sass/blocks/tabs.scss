@@ -8,15 +8,25 @@
   padding: 5px 0 8px 0;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+    padding-bottom: 11px;
+    margin-bottom: 34px;
+  }
 
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 5px;
+    left: 0;
     display: block;
-    width: 98%;
+    width: 100%;
     height: 2px;
     background-color: $color-grey;
     opacity: 0.2;
@@ -26,9 +36,9 @@
 .tabs__control {
   position: relative;
   display: block;
-  padding: 5px;
+  padding: 5px 0;
   margin: 0;
-  margin-right: 36px;
+  margin-right: 46px;
   border: none;
   background-color: transparent;
   font-family: $ff-Roboto-Condensed;
@@ -37,6 +47,18 @@
   line-height: 30px;
   color: rgba($color-sapphire, 0.5);
   cursor: pointer;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 54px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 45px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -53,12 +75,17 @@
     &::after {
       content: "";
       position: absolute;
-      left: 3px;
+      left: 0;
       bottom: -8px;
       display: block;
-      width: 91%;
+      width: 99%;
       height: 2px;
       background-color: $color-crimson;
+
+      @include vp-767 {
+        bottom: -11px;
+        width: calc(100% + 7px);
+      }
     }
   }
 }

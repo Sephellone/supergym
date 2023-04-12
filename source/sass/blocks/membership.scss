@@ -3,10 +3,33 @@
   padding-bottom: 120px;
   background-color: $color-ghost-white;
 
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 67px;
+  }
+
+  .container {
+    position: relative;
+  }
+
   h2 {
     margin-bottom: 7px;
     text-align: center;
     transform: translateX(-2px);
+
+    @include vp-1199 {
+      margin-bottom: 10px;
+      transform: translateX(-7px);
+    }
+
+    @include vp-767 {
+      transform: translateX(-5px);
+    }
   }
 }
 
@@ -18,6 +41,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  @include vp-767 {
+    row-gap: 35px;
+  }
 }
 
 .membership__card {
@@ -26,9 +58,24 @@
   flex-direction: column;
   align-items: center;
   max-width: 360px;
-  padding: 52px 20px 59px 20px;
+  padding: 50px 20px 59px 20px;
   border: 7px solid $color-default-white;
   background-color: $color-default-white;
+
+  @include vp-1199 {
+    max-width: none;
+    width: 65.2%;
+    place-self: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 44px;
+    padding-bottom: 49px;
+  }
 
   h3 {
     margin: 0;
@@ -37,6 +84,16 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 40px;
+
+    @include vp-1199 {
+      margin-bottom: 5px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 7px;
+    }
   }
 
   small {
@@ -48,6 +105,14 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-chambray;
+
+    @include vp-1199 {
+      margin-bottom: 65px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 56px;
+    }
   }
 
   &:hover,
@@ -78,6 +143,18 @@
   line-height: 90px;
   color: $color-egyptian-blue;
 
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 72px;
+
+    transform: translateX(1px);
+  }
+
   &::before {
     content: attr(data-price);
     position: absolute;
@@ -88,12 +165,25 @@
     line-height: 150px;
     color: $color-whisper;
     opacity: 0.48;
+
+    @include vp-1199 {
+      bottom: -5px;
+    }
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+    }
   }
 
   span {
     position: relative;
     z-index: 2;
     margin-right: 14px;
+
+    @include vp-767 {
+      margin-right: 10px;
+    }
   }
 
   svg {
@@ -102,9 +192,35 @@
     width: 30px;
     height: 42px;
     flex-shrink: 0;
+
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
   }
 }
 
 .membership__button {
   width: 206px;
+}
+
+.membership__weights {
+  position: absolute;
+  right: -110px;
+  bottom: -216px;
+  display: block;
+  width: 322px;
+  height: 385px;
+  transform: rotate(150deg);
+
+  @include vp-1199 {
+    width: 289px;
+    height: 345px;
+    right: -9px;
+    bottom: -175px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
