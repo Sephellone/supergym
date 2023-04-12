@@ -1,0 +1,110 @@
+.membership {
+  padding-top: 117px;
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+
+  h2 {
+    margin-bottom: 7px;
+    text-align: center;
+    transform: translateX(-2px);
+  }
+}
+
+.membership__card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.membership__card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  padding: 52px 20px 59px 20px;
+  border: 7px solid $color-default-white;
+  background-color: $color-default-white;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  small {
+    display: block;
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-chambray;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border-image: linear-gradient(135deg, $color-crimson, $color-smalt) 30;
+
+    .membership__button {
+      background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+      border: none;
+      padding: 25px;
+      color: $color-default-white;
+    }
+  }
+}
+
+.membership__price {
+  position: relative;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $ff-Roboto-Condensed;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    bottom: 0;
+    display: block;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: $color-whisper;
+    opacity: 0.48;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    margin-right: 14px;
+  }
+
+  svg {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+}
+
+.membership__button {
+  width: 206px;
+}
