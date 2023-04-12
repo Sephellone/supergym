@@ -453,6 +453,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   background-color: #ffffff;
 }
 
@@ -1759,16 +1760,16 @@ button,
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .tabs__controls::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 5px;
+  left: 0;
   display: block;
-  width: 98%;
+  width: 100%;
   height: 2px;
   background-color: #787878;
   opacity: 0.2;
@@ -1777,9 +1778,9 @@ button,
 .tabs__control {
   position: relative;
   display: block;
-  padding: 5px;
+  padding: 5px 0;
   margin: 0;
-  margin-right: 36px;
+  margin-right: 46px;
   border: none;
   background-color: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1806,10 +1807,10 @@ button,
 .tabs__control.is-active::after {
   content: "";
   position: absolute;
-  left: 3px;
+  left: 0;
   bottom: -8px;
   display: block;
-  width: 91%;
+  width: 99%;
   height: 2px;
   background-color: #d10d42;
 }
@@ -1837,6 +1838,10 @@ button,
   padding-top: 117px;
   padding-bottom: 120px;
   background-color: #f8f9fc;
+}
+
+.membership .container {
+  position: relative;
 }
 
 .membership h2 {
@@ -1875,7 +1880,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   max-width: 360px;
-  padding: 52px 20px 59px 20px;
+  padding: 50px 20px 59px 20px;
   border: 7px solid #ffffff;
   background-color: #ffffff;
 }
@@ -1967,6 +1972,18 @@ button,
 
 .membership__button {
   width: 206px;
+}
+
+.membership__weights {
+  position: absolute;
+  right: -110px;
+  bottom: -216px;
+  display: block;
+  width: 322px;
+  height: 385px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 [data-tabs=parent] {
@@ -2157,6 +2174,7 @@ button,
 
   .gym {
     padding-top: 100px;
+    padding-bottom: 16px;
   }
 
   .gym__container {
@@ -2237,6 +2255,67 @@ button,
     /* stylelint-disable-next-line */
     -webkit-mask: radial-gradient(35px, rgba(0, 0, 0, 0) 98%, #000000);
     mask: radial-gradient(35px, rgba(0, 0, 0, 0) 98%, #000000);
+  }
+
+  .tabs__controls {
+    margin-bottom: 45px;
+  }
+
+  .tabs__control {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 54px;
+  }
+
+  .membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .membership h2 {
+    margin-bottom: 10px;
+    -webkit-transform: translateX(-7px);
+    -ms-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+
+  .membership__card-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .membership__card {
+    max-width: none;
+    width: 65.2%;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .membership__card h3 {
+    margin-bottom: 5px;
+  }
+
+  .membership__card small {
+    margin-bottom: 65px;
+  }
+
+  .membership__price {
+    margin-bottom: 35px;
+  }
+
+  .membership__price::before {
+    bottom: -5px;
+  }
+
+  .membership__weights {
+    width: 289px;
+    height: 345px;
+    right: -9px;
+    bottom: -175px;
   }
 }
 
@@ -2331,6 +2410,7 @@ button,
 
   .gym {
     padding-top: 65px;
+    padding-bottom: 70px;
   }
 
   .gym__container {
@@ -2379,6 +2459,83 @@ button,
     -webkit-transform: translateX(3px);
     -ms-transform: translateX(3px);
     transform: translateX(3px);
+  }
+
+  .tabs__controls {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 11px;
+    margin-bottom: 34px;
+  }
+
+  .tabs__control {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 45px;
+  }
+
+  .tabs__control.is-active::after {
+    bottom: -11px;
+    width: calc(100% + 7px);
+  }
+
+  .membership {
+    padding-top: 63px;
+    padding-bottom: 67px;
+  }
+
+  .membership h2 {
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  .membership__card-list {
+    row-gap: 35px;
+  }
+
+  .membership__card {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 44px;
+    padding-bottom: 49px;
+  }
+
+  .membership__card h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  .membership__card small {
+    margin-bottom: 56px;
+  }
+
+  .membership__price {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 72px;
+    -webkit-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  .membership__price::before {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .membership__price span {
+    margin-right: 10px;
+  }
+
+  .membership__price svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .membership__weights {
+    display: none;
   }
 }
 
