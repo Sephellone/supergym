@@ -17,6 +17,7 @@ const initSliders = () => {
         1200: {
           spaceBetween: 40,
           initialSlide: 0,
+          centeredSlides: false,
         },
       },
       // Navigation arrows
