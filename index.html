@@ -227,9 +227,14 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="membership__weights-wrapper">
             <picture>
-              <source type="image/webp" srcset="img/weights.webp 1x, img/weights@2x.webp 2x">
-              <img class="membership__weights" src="img/weights.png" alt="" width="321" height="384" srcset="img/weights@2x.png">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/weights-tablet.webp 1x, ./img/weights-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/weights-desktop.webp 1x, ./img/weights-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="./img/weights-tablet.png 1x, ./img/weights-tablet@2x.png 2x">
+
+              <img class="membership__weights" src="./img/weights-desktop.png" alt="" width="321" height="384" srcset="./img/weights-desktop@2x.png">
             </picture>
           </div>
         </section>
