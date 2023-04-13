@@ -3182,6 +3182,7 @@ button,
 
 .staff__slider-button {
   position: absolute;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4034,7 +4035,8 @@ button,
   }
 
   .staff__slider {
-    width: calc(100% - 4px);
+    height: 338px;
+    width: calc(100% - 44px);
   }
 
   .staff__item {
