@@ -3302,7 +3302,12 @@ button,
   padding: 53px 30px 20px 30px;
   color: #ffffff;
   overflow-y: scroll;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  /* stylelint-disable-next-line */
+}
+
+.staff-card__description::-webkit-scrollbar {
+  display: none;
 }
 
 .staff-card__description::before {
