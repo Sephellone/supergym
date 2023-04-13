@@ -5,6 +5,7 @@
 .tabs__controls {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding: 5px 0 8px 0;
   width: max-content;
   margin: 0 auto;
@@ -35,6 +36,7 @@
 
 .tabs__control {
   position: relative;
+  flex-shrink: 0;
   display: block;
   padding: 5px 0;
   margin: 0;

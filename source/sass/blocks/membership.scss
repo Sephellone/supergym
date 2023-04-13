@@ -134,7 +134,6 @@
   &:hover,
   &:focus,
   &:focus-within {
-
     &::after {
       background: linear-gradient(135deg, $color-crimson 0, $color-smalt 100%);
     }
