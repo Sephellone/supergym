@@ -1534,6 +1534,11 @@ button,
   background: transparent;
   color: #ffffff;
   cursor: pointer;
+  /* stylelint-disable-next-line */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .button::after {
