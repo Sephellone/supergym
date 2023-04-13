@@ -1,5 +1,4 @@
 const initSliders = () => {
-
   if (document.querySelector('.staff__slider')) {
     const staffSlider = new Swiper('.staff__slider', {
       direction: 'horizontal',

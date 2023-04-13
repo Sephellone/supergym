@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideos} from './modules/video';
 import {initTabs} from './vendor/tabs/init-tabs';
-import {initSliders} from './modules/sliders';
+import {initSliders} from './vendor/sliders';
 
 // ---------------------------------
 
