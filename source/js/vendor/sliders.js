@@ -6,10 +6,12 @@ const initSliders = () => {
       slidesPerView: 'auto',
       spaceBetween: 20,
       initialSlide: 2,
+      centeredSlides: true,
 
       breakpoints: {
         768: {
           spaceBetween: 30,
+          centeredSlides: false,
         },
 
         1200: {
