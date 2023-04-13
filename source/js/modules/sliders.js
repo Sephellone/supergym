@@ -4,18 +4,21 @@ const initSliders = () => {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 40,
+      spaceBetween: 30,
       initialSlide: 2,
       centeredSlides: true,
+      autoResize: false,
 
       breakpoints: {
         768: {
           spaceBetween: 30,
           centeredSlides: false,
+          slidesPerView: 'auto',
         },
 
         1200: {
           spaceBetween: 40,
+          slidesPerView: 'auto',
           initialSlide: 0,
           centeredSlides: false,
         },
