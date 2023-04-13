@@ -5,7 +5,19 @@ const initSliders = () => {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 40,
+      spaceBetween: 20,
+      initialSlide: 2,
+
+      breakpoints: {
+        768: {
+          spaceBetween: 30,
+        },
+
+        1200: {
+          spaceBetween: 40,
+          initialSlide: 0,
+        },
+      },
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
