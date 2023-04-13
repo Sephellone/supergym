@@ -17,8 +17,10 @@
 
   background: transparent;
   color: $color-default-white;
-  // border: 4px solid $color-default-white;
   cursor: pointer;
+  /* stylelint-disable-next-line */
+  -webkit-user-select: none;
+  user-select: none;
 
   &::after {
     content: "";
