@@ -1440,19 +1440,22 @@ button,
 }
 
 .hero__description {
+  position: relative;
   -ms-grid-row-align: start;
   -ms-grid-column-align: start;
   place-self: start start;
   padding-top: 87px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr 1.8fr;
   row-gap: 17px;
 }
 
 .hero__description p {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -1470,9 +1473,9 @@ button,
 }
 
 .hero__description h1 {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -1520,6 +1523,11 @@ button,
   -ms-grid-row-align: end;
   -ms-grid-column-align: end;
   place-self: end end;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
   width: 100%;
   max-width: 234px;
   margin: 0;
@@ -1761,19 +1769,26 @@ button,
 
 .tabs {
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .tabs__controls {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 5px 0 8px 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   margin: 0 auto;
   margin-bottom: 45px;
 }
@@ -2109,6 +2124,8 @@ button,
 }
 
 .super-games__description-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -ms-grid-row-align: stretch;
   -ms-grid-column-align: stretch;
   place-self: stretch;
@@ -2362,7 +2379,7 @@ button,
   }
 
   .hero__description ul {
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -2660,6 +2677,8 @@ button,
   }
 
   .hero__description ul {
+    position: absolute;
+    min-width: 113px;
     padding-bottom: 33px;
   }
 
