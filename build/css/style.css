@@ -4034,7 +4034,7 @@ button,
   }
 
   .staff__slider {
-    width: calc(100% - 64px);
+    width: calc(100% - 4px);
   }
 
   .staff__item {

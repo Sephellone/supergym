@@ -4,7 +4,7 @@ const initSliders = () => {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 40,
       initialSlide: 2,
       centeredSlides: true,
 
