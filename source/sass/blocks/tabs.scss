@@ -8,16 +8,16 @@
   padding: 5px 0 8px 0;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 45px;
 
   @include vp-1199 {
-    margin-bottom: 45px;
+    margin-bottom: 52px;
   }
 
   @include vp-767 {
     flex-wrap: wrap;
     padding-bottom: 11px;
-    margin-bottom: 34px;
+    margin-bottom: 41px;
   }
 
   &::after {
@@ -91,6 +91,7 @@
 }
 
 .tabs__content {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
