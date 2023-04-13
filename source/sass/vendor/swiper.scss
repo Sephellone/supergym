@@ -214,19 +214,19 @@
   left: 10px;
   right: auto;
 }
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-  content: 'prev';
-}
+// .swiper-button-prev:after,
+// .swiper-rtl .swiper-button-next:after {
+//   content: 'prev';
+// }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 10px;
   left: auto;
 }
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  content: 'next';
-}
+// .swiper-button-next:after,
+// .swiper-rtl .swiper-button-prev:after {
+//   content: 'next';
+// }
 .swiper-button-lock {
   display: none;
 }

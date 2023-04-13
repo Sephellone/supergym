@@ -9,9 +9,7 @@
   display: inline-flex;
   flex-wrap: wrap;
   padding: 5px 0 8px 0;
-  // width: max-content;
   align-self: center;
-  margin: 0 auto;
   margin-bottom: 45px;
 
   @include vp-1199 {
