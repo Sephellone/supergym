@@ -4139,6 +4139,145 @@ button,
   opacity: 0.5;
 }
 
+.footer {
+  padding: 40px 0 35px 0;
+  background-color: #030a1a;
+  color: #ffffff;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 88px;
+  height: 32px;
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.footer__nav {
+  max-width: 975px;
+  width: 84%;
+  margin: 0;
+  margin-right: auto;
+}
+
+.footer__social {
+  width: 185px;
+}
+
+.nav__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 19%;
+  list-style-type: none;
+}
+
+.nav__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav__item {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+}
+
+.nav__link.focus-visible:focus {
+  color: #4777e2;
+}
+
+.nav__link:active {
+  opacity: 0.5;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  margin: 0;
+  margin-left: 11px;
+  padding: 0;
+}
+
+.social__item:first-child {
+  margin-left: 0;
+}
+
+.social__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1px 0;
+  color: inherit;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+}
+
+.social__link.focus-visible:focus {
+  color: #4777e2;
+}
+
+.social__link:active {
+  opacity: 0.5;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -4726,6 +4865,31 @@ button,
     font-size: 18px;
     line-height: 152.34%;
   }
+
+  .footer {
+    padding-top: 45px;
+  }
+
+  .footer__logo {
+    width: 82px;
+    height: 22px;
+    padding: 0;
+  }
+
+  .footer__social {
+    width: 100px;
+    -webkit-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+
+  .nav__item {
+    margin-right: 20px;
+  }
+
+  .nav__link {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -5279,6 +5443,73 @@ button,
   .contacts__list::after {
     display: none;
   }
+
+  .footer {
+    padding-top: 43px;
+    padding-bottom: 45px;
+  }
+
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 68px;
+    height: 19px;
+    padding: 5px 0;
+  }
+
+  .footer__nav {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    margin-bottom: 19px;
+  }
+
+  .footer__social {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .nav__list {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    padding: 0;
+  }
+
+  .nav__logo {
+    position: static;
+    margin-bottom: 11px;
+  }
+
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 11px;
+  }
+
+  .nav__link {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .social {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5426,5 +5657,13 @@ button,
 
   .contacts__item a:hover:not(.focus-visible) {
     color: #d10d42;
+  }
+
+  .nav__link:hover:not(.focus-visible) {
+    color: #4777e2;
+  }
+
+  .social__link:hover:not(.focus-visible) {
+    color: #4777e2;
   }
 }
