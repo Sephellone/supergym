@@ -2599,7 +2599,13 @@ button,
 }
 
 .staff h2 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   margin-bottom: 13px;
+  padding: 0 103px 0 105px;
 }
 
 .staff__slider {
@@ -4048,6 +4054,7 @@ button,
   }
 
   .staff h2 {
+    padding: 0 45px;
     margin-bottom: 0;
     text-align: center;
     -webkit-transform: translateX(-3px);
@@ -4599,6 +4606,7 @@ button,
   }
 
   .staff h2 {
+    padding: 0 15px;
     margin-bottom: 10px;
   }
 
