@@ -28,6 +28,8 @@
   height: 32px;
   margin: 0;
   padding: 10px 0 5px 0;
+  transition: $trans-600;
+  transition-property: filter;
 
   @include vp-1199 {
     width: 82px;
@@ -40,6 +42,10 @@
     width: 68px;
     height: 19px;
     padding: 5px 0;
+  }
+
+  @include hover-focus {
+    filter: brightness(0.5) sepia(1) saturate(50) hue-rotate(-150deg);
   }
 }
 

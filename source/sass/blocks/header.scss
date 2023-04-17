@@ -86,9 +86,12 @@
 
 .header__logo-link {
   display: block;
+  transition: $trans-default;
+  transition-property: filter;
 
   @include hover-focus {
-    filter: drop-shadow(0 0 4px $color-default-white);
+    // filter: drop-shadow(0 0 4px $color-default-white);
+    filter: brightness(0.5) sepia(1) saturate(50) hue-rotate(-150deg);
   }
 
   &:active {
