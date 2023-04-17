@@ -114,14 +114,14 @@
         <section class="membership" id="section-membership">
           <div class="container">
             <h2 class="title">Абонементы</h2>
-            <div class="membership__tabs tabs" data-tabs="parent" data-delay="300" data-height="max">
-              <div class="tabs__controls" data-tabs="controls">
-                <button class="tabs__control is-active" type="button" data-tabs="control" data-index="0">1 месяц</button>
-                <button class="tabs__control" type="button" data-tabs="control" data-index="1">6 месяцев</button>
-                <button class="tabs__control" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+            <div class="membership__tabs tabs" data-tabs="parent">
+              <div class="tabs__controls">
+                <button class="tabs__control is-active" type="button" data-tabs="control" data-content="1">1 месяц</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-content="6">6 месяцев</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-content="12">12 месяцев</button>
               </div>
-              <ul class="tabs__content" data-tabs="content">
-                <li class="tabs__element is-active" data-tabs="element">
+              <ul class="tabs__content">
+                <li class="tabs__element is-active" data-tabs="element" data-element-content="1">
                   <ul class="membership__card-list">
                     <li class="membership__card" tabindex="0">
                     <h3>С тренером</h3>
@@ -162,7 +162,7 @@
                   </ul>
                 </li>
 
-                <li class="tabs__element" data-tabs="element">
+                <li class="tabs__element" data-tabs="element" data-element-content="6">
                   <ul class="membership__card-list">
                     <li class="membership__card" tabindex="0">
                     <h3>С тренером</h3>
@@ -203,7 +203,7 @@
                   </ul>
                 </li>
 
-                <li class="tabs__element" data-tabs="element">
+                <li class="tabs__element" data-tabs="element" data-element-content="12">
                   <ul class="membership__card-list">
                     <li class="membership__card" tabindex="0">
                     <h3>С тренером</h3>

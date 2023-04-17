@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initTabs} from './vendor/tabs/init-tabs';
+import {initTabs} from './modules/tabs';
 import {initSliders} from './modules/sliders';
 import {initVideoButton, initYTapi} from './modules/video-api';
 

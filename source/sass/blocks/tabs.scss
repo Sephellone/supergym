@@ -71,6 +71,11 @@
     color: $color-sapphire;
   }
 
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   &.is-active {
     pointer-events: none;
     color: $color-sapphire;
@@ -98,15 +103,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  transition: height 0.3s;
 }
 
-.tabs--unset .tabs__content {
-  height: 100px;
-}
+.tabs__element {
+  display: none;
 
-.tabs--unset .tabs__element {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  &.is-active {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 100%;
+  }
 }
