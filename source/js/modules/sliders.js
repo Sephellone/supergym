@@ -8,17 +8,21 @@ const initSliders = () => {
       initialSlide: 2,
       centeredSlides: true,
       autoResize: false,
+      loopedSlides: 0,
+      maxBackfaceHiddenSlides: 0,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
 
       breakpoints: {
         768: {
           spaceBetween: 30,
           centeredSlides: false,
-          slidesPerView: 'auto',
         },
 
         1200: {
           spaceBetween: 40,
-          slidesPerView: 'auto',
           initialSlide: 0,
           centeredSlides: false,
         },
@@ -28,6 +32,11 @@ const initSliders = () => {
         nextEl: '.staff__slider-button--next',
         prevEl: '.staff__slider-button--prev',
       },
+    });
+
+    const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
+    duplicates.forEach((duplicate) => {
+      duplicate.querySelector('.staff-card').setAttribute('tabindex', '-1');
     });
   }
 
@@ -43,6 +52,14 @@ const initSliders = () => {
         nextEl: '.reviews__button--next',
         prevEl: '.reviews__button--prev',
       },
+    });
+  }
+
+  const notificationSpans = document.querySelectorAll('.swiper-notification');
+
+  if (notificationSpans && notificationSpans.length) {
+    notificationSpans.forEach((span) => {
+      span.remove();
     });
   }
 };
