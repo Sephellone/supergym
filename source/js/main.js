@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initTabs} from './modules/tabs';
 import {initSliders} from './modules/sliders';
-import {initVideoButton, initYTapi} from './modules/video-api';
+import {initVideos} from './modules/video';
 
 // ---------------------------------
 
@@ -18,10 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    setTimeout(() => {
-      initYTapi();
-      initVideoButton();
-    }, 1000);
+    initVideos();
     initTabs();
     initSliders();
   });
