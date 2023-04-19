@@ -1869,14 +1869,14 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-row-align: end;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  -ms-grid-row-align: center;
   -ms-grid-column-align: start;
-  place-self: end start;
+  place-self: center start;
   margin: 0;
   padding: 0;
-  padding-bottom: 38px;
+  padding-bottom: 42px;
   list-style-type: none;
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
@@ -1890,9 +1890,9 @@ button,
 }
 
 .hero__button {
-  -ms-grid-row-align: end;
+  -ms-grid-row-align: start;
   -ms-grid-column-align: end;
-  place-self: end end;
+  place-self: start end;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   -ms-grid-row: 3;
@@ -2452,6 +2452,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 20px 0;
   background-color: #ed0233;
 }
 
@@ -3814,7 +3815,7 @@ button,
   }
 
   .hero__description ul {
-    padding-bottom: 21px;
+    padding-bottom: 35px;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -4428,13 +4429,24 @@ button,
   }
 
   .hero__description ul {
-    position: absolute;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row-align: end;
+    -ms-grid-column-align: start;
+    place-self: end start;
     min-width: 113px;
-    padding-bottom: 33px;
+    padding-bottom: 32px;
   }
 
   .hero__button {
     max-width: none;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     width: 100%;
     margin-top: 9px;
     -webkit-transform: translateX(0);
