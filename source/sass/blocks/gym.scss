@@ -248,8 +248,8 @@
     border-radius: 50%;
     opacity: 0.2;
     /* stylelint-disable-next-line */
-    -webkit-mask: radial-gradient(47px, #00000000 98%, #000000);
-    mask: radial-gradient(47px, #00000000 98%, #000000);
+    -webkit-mask: radial-gradient(47px, $color-transparent 98%, $color-default-black);
+    mask: radial-gradient(47px, $color-transparent 98%, $color-default-black);
 
     transform: translate(-50%, -50%);
 

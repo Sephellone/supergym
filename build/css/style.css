@@ -2107,8 +2107,8 @@ button,
   border-radius: 50%;
   opacity: 0.2;
   /* stylelint-disable-next-line */
-  -webkit-mask: radial-gradient(47px, rgba(0, 0, 0, 0) 98%, #000000);
-  mask: radial-gradient(47px, rgba(0, 0, 0, 0) 98%, #000000);
+  -webkit-mask: radial-gradient(47px, rgba(255, 255, 255, 0) 98%, #000000);
+  mask: radial-gradient(47px, rgba(255, 255, 255, 0) 98%, #000000);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
