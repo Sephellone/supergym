@@ -257,8 +257,8 @@
       width: 73px;
       height: 73px;
       /* stylelint-disable-next-line */
-      -webkit-mask: radial-gradient(35px, #00000000 98%, #000000);
-      mask: radial-gradient(35px, #00000000 98%, #000000);
+      -webkit-mask: radial-gradient(35px, $color-transparent 98%, $color-default-black);
+      mask: radial-gradient(35px, $color-transparent 98%, $color-default-black);
     }
   }
 
