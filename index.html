@@ -39,7 +39,9 @@
             <a class="header__logo-link" href="./index.html">
               <img class="header__logo" src="./img/svg/logo.svg" alt="Логотип SUPERGYM." width="122" height="44">
             </a>
-            <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+            <div class="header__link-wrapper">
+              <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+            </div>
           </header>
 
           <!-- Инфо и картинка -->
@@ -716,7 +718,7 @@
                 </label>
 
                 <label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9]{11}" maxlength="12" title="Телефон должен содержать 11 цифр. Может содержать знак + в качестве первого знака">
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9]{11}" maxlength="12" title="Телефон должен содержать 11 цифр. Не может содержать буквы и спецсимволы. Может содержать знак + в качестве первого знака">
                   <span>Телефон</span>
                 </label>
 
