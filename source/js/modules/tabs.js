@@ -28,8 +28,6 @@ const controlClickHandler = (evt, controls, elements, parent) => {
 
 const initTabs = () => {
   if (tabsParentElement) {
-    const parentHeight = tabsParentElement.offsetHeight;
-    tabsParentElement.setAttribute('style', `min-height: ${parentHeight}px`);
     const tabsControls = tabsParentElement.querySelectorAll('[data-tabs="control"]');
     const tabsElementsList = tabsParentElement.querySelectorAll('[data-tabs="element"]');
 
