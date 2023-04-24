@@ -34,13 +34,20 @@
   }
 }
 
+.header__link-wrapper {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 60%;
+}
+
 .header__link {
   position: relative;
   display: block;
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  align-self: flex-start;
   font-family: $ff-Alumni-Sans;
   font-weight: 600;
   font-size: 26px;

@@ -91,6 +91,10 @@
   height: 40px;
 
   transform: translateY(-50%);
+
+  @include vp-767 {
+
+  }
 }
 
 
@@ -110,14 +114,14 @@
 
   @include vp-767 {
     svg {
-      width: 10px;
-      height: 19px;
+      width: 12px;
+      height: 21px;
     }
   }
 
   &--prev {
     left: 46px;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-2px);
 
     @include vp-1199 {
       left: 43px;
@@ -126,7 +130,7 @@
 
     @include vp-767 {
       left: 10px;
-      transform: rotate(180deg) translateY(10px);
+      transform: rotate(180deg) translateY(-2px);
     }
   }
 
@@ -136,12 +140,12 @@
 
     @include vp-1199 {
       right: 43px;
-      transform: translateY(2px);
+      transform: translateY(0);
     }
 
     @include vp-767 {
       right: 10px;
-      transform: translateY(-10px);
+      transform: translateY(0);
     }
   }
 
