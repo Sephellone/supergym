@@ -120,7 +120,8 @@
   }
 
   a {
-    display: inline-block;
+    display: block;
+    width: max-content;
 
     @include hover-focus {
       color: $color-crimson;

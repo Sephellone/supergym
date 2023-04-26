@@ -1973,8 +1973,8 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
 }
 
 .gym__description h2 {
@@ -2285,6 +2285,7 @@ button,
   -webkit-column-gap: 54px;
   -moz-column-gap: 54px;
   column-gap: 54px;
+  row-gap: 40px;
   margin: 0;
   padding: 0 7px;
   padding-bottom: 10px;
@@ -2721,12 +2722,7 @@ button,
 .staff-card:focus-within .staff-card__description {
   height: 100%;
   padding-bottom: 30px;
-}
-
-.staff-card:hover .staff-card__description::before,
-.staff-card:focus .staff-card__description::before,
-.staff-card:focus-within .staff-card__description::before {
-  display: block;
+  background-color: rgba(16, 38, 84, 0.89);
 }
 
 .staff-card:hover .staff-card__hidden-description,
@@ -2787,19 +2783,6 @@ button,
 
 .staff-card__description::-webkit-scrollbar {
   display: none;
-}
-
-.staff-card__description::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: #102654;
-  opacity: 0.89;
 }
 
 .staff-card__description h3 {
@@ -3600,7 +3583,10 @@ button,
 }
 
 .contacts__item a {
-  display: inline-block;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .contacts__item a.focus-visible:focus {
@@ -4233,7 +4219,7 @@ button,
 
   .reviews {
     padding-top: 43px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
   }
 
   .reviews h2 {
@@ -4449,11 +4435,12 @@ button,
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row-align: end;
+    -ms-grid-row-align: start;
     -ms-grid-column-align: start;
-    place-self: end start;
+    place-self: start start;
     min-width: 113px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
+    padding-top: 77px;
   }
 
   .hero__button {

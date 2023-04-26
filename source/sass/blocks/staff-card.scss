@@ -12,10 +12,7 @@
     .staff-card__description {
       height: 100%;
       padding-bottom: 30px;
-
-      &::before {
-        display: block;
-      }
+      background-color: rgba($color-sapphire, 0.89);
     }
 
     h3 {
@@ -70,19 +67,6 @@
 
   @include vp-767 {
     padding: 42px 20px 20px 10px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-color: $color-sapphire;
-    opacity: 0.89;
   }
 
   h3 {
